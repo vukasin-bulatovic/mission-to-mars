@@ -1,0 +1,61 @@
+.thirdPage {
+  margin: 0 auto;
+  width: 70%;
+  .checkBoxes {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .check {
+      margin-right: 5px;
+    }
+  }
+  .inputs {
+    margin-top: 10px;
+  }
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 100px;
+
+    .btnBack {
+      background-color: white;
+      padding: 5px 15px;
+      color: #2e2e38;
+    }
+    .btnNext {
+      background-color: #2e2e38;
+      padding: 5px;
+      color: white;
+    }
+    .btnNext:disabled {
+      background-color: white;
+      color: black;
+      cursor: default;
+    }
+  }
+  .textArea {
+    font-size: 10px;
+    color: red;
+  }
+}
+@media screen and (max-width: 750px) and (min-width: 550px) {
+  .check {
+    width: 30%;
+    margin-bottom: 5px;
+  }
+  .convictions {
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  .checkBoxes {
+    flex-direction: column;
+  }
+  .check {
+    margin-bottom: 3px;
+  }
+}

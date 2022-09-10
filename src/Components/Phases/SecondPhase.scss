@@ -1,0 +1,87 @@
+.secondPage {
+  margin: 0 auto;
+  width: 70%;
+  .onlyMargin {
+    margin-top: 5%;
+  }
+  .adress {
+    display: flex;
+    justify-content: space-between;
+  }
+  .location {
+    display: flex;
+    justify-content: space-between;
+  }
+  ul {
+    list-style: none;
+    li {
+      cursor: pointer;
+    }
+  }
+  span {
+    font-size: 10px;
+    color: red;
+  }
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 100px;
+
+    .btnBack {
+      background-color: white;
+      padding: 5px 15px;
+      color: #2e2e38;
+    }
+    .btnNext {
+      background-color: #2e2e38;
+      padding: 5px;
+      color: white;
+    }
+
+    .btnNext:disabled {
+      background-color: white;
+      color: black;
+      cursor: default;
+    }
+  }
+  .dropdown {
+    position: relative;
+    margin-bottom: 100px;
+    ul {
+      position: absolute;
+      top: 2.8rem;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      overflow-y: scroll;
+      max-height: 100px;
+
+      li {
+        border: 1px solid black;
+        height: 2rem;
+        width: 100%;
+      }
+    }
+    .disabled {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .adress {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    text-align: center;
+  }
+  .location {
+    display: flex;
+    flex-direction: column;
+  }
+}

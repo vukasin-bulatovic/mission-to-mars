@@ -1,0 +1,98 @@
+.first {
+  margin: 0 auto;
+  width: 70%;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #666;
+    padding: 10px;
+  }
+  .fields {
+    width: 50%;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .name {
+      width: 50%;
+    }
+    label {
+      font-size: smaller;
+    }
+    &.fullName {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    .inputFields {
+      width: 70%;
+      margin-right: 20px;
+    }
+  }
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    padding: 10px;
+    margin-bottom: 100px;
+
+    .btnBack {
+      background-color: white;
+      padding: 5px 15px;
+      color: #2e2e38;
+    }
+    .btnNext {
+      background-color: #2e2e38;
+      padding: 5px;
+      color: white;
+    }
+    .white {
+      background-color: white;
+      color: black;
+      cursor: default;
+    }
+  }
+  .star {
+    color: red;
+  }
+
+  .btn {
+    margin-bottom: 100px;
+  }
+  span {
+    font-size: 10px;
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    h2 {
+      font-size: smaller;
+    }
+    p {
+      font-size: xx-small;
+    }
+  }
+  .title {
+    margin-left: 7px;
+  }
+
+  .fields {
+    margin-left: 7px;
+  }
+  .fullName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .inputFields {
+      width: 50%;
+      margin-top: 10px;
+    }
+  }
+}

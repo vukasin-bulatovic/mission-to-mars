@@ -1,0 +1,46 @@
+.slider {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.carosel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.arrow-left {
+  position: absolute;
+  top: 100px;
+  left: -30px;
+  cursor: pointer;
+}
+.arrow-right {
+  position: absolute;
+  top: 100px;
+  right: -30px;
+  cursor: pointer;
+}
+.rings {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ringSpan {
+  border-radius: 50%;
+  border: solid 1px black;
+  width: 6px;
+  height: 6px;
+}
+.background {
+  background-color: black;
+}

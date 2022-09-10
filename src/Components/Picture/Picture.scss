@@ -1,0 +1,22 @@
+.picture {
+  width: 24%;
+  margin-bottom: 30px;
+  
+  p,h3{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+
+  .slide-img {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+}
+
+@media all and(max-width:400px) {
+  .picture {
+    width: 100%;
+  }
+}
